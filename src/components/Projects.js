@@ -1,13 +1,30 @@
-import React from 'react';
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import './Projects.css';
+
 
 function Projects() {
 
-  console.log("This app is working.")
-
   return (
-    <React.Fragment>
-      <h1>All Projects box</h1>
-    </React.Fragment>
+    <div className="Projects-box">
+
+<Tabs className="Tabs">
+       <TabList>
+         <Tab>Project 1</Tab>
+         <Tab>Project 2</Tab>
+         <Tab>Project 3</Tab>
+       </TabList>
+<TabPanel>
+         <p>This is the first project I did blablabalbalbalbalbalba</p>
+       </TabPanel>
+       <TabPanel>
+         <p>This is the 2 project I did blablabalbalbalbalbalba This is the first project I did blablabalbalbalbalbalba</p>
+       </TabPanel>
+       <TabPanel>
+         <p>Tab 3 works!</p>
+       </TabPanel>
+     </Tabs>
+
+    </div>
   );
 }
 
