@@ -23,6 +23,10 @@
   text-align: left;
 }
 
+.footer {
+  width: 150px;
+}
+
 @media all and (min-width: 600px) {
   .aside { flex: 1 0 0; }
 }

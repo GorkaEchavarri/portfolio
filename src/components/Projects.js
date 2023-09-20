@@ -20,7 +20,7 @@ function Projects() {
          <p>This is the 2 project I did blablabalbalbalbalbalba This is the first project I did blablabalbalbalbalbalba</p>
        </TabPanel>
        <TabPanel>
-         <p>Tab 3 works!</p>
+         <p>This is Project number 3 with blanvdsn`fnfs`bnufsi</p>
        </TabPanel>
      </Tabs>
 
