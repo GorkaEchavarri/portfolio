@@ -1,6 +1,10 @@
 import React from 'react';
 import './Profile.css';
-import ProfilePic from '../images/Gorka-profile.jpg';
+import ProfilePic from '../../../images/Gorka-profile.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
 
 function Profile() {
 
@@ -12,8 +16,15 @@ function Profile() {
         <div class="main">
           <h1>Gorka Echavarri</h1>
           <h2>Web Developer</h2>
-          <p>Linkedin</p>
-          <p>Github</p>
+
+          <div class="btn btn-custom">
+          <span><FontAwesomeIcon icon={faLinkedin} /> Linkedin</span>
+          </div>
+
+          <div class="btn btn-custom">
+          <p><FontAwesomeIcon icon={faGithub} /> Github</p>
+          </div>
+
         </div>
 
         <div class="aside aside-1"><img src={ProfilePic} alt="Gorkas profile pic" className="Profile-pic"/></div>

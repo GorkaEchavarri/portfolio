@@ -1,6 +1,6 @@
 import './App.css';
-import Profile from './components/Profile';
-import Projects from './components/Projects';
+import Profile from './components/UI/Profile/Profile';
+import Projects from './components/UI/Projects/Projects';
 
 function App() {
   return (
@@ -17,3 +17,5 @@ function App() {
 }
 
 export default App;
+
+// Dependencies, FontAwesome, React Tables? Mirar para readme que son.
