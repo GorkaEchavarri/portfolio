@@ -27,18 +27,22 @@
   width: 150px;
 }
 
-.btn {
+a {
+  text-decoration: none;
+}
+
+.btn-custom {
   line-height: 30px;
   height: 30px;
   text-align: center;
   width: 120px;
   cursor: pointer;
-}
-
-.btn-custom {
   color: #00ADB5;
   transition: all 0.5s;
   position: relative;
+  margin: 5px;
+  border: 0;
+  background-color: #222831;
 }
 .btn-custom::before {
   content: '';

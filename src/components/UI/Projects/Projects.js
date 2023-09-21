@@ -8,21 +8,26 @@ function Projects() {
     <div className="Projects-box">
 
 <Tabs className="Tabs">
-       <TabList>
-         <Tab>CodeClicker</Tab>
-         <Tab>TheLoop</Tab>
-         <Tab>Devify</Tab>
-       </TabList>
-<TabPanel>
-         <p>This is the first project I did blablabalbalbalbalbalba</p>
-       </TabPanel>
-       <TabPanel>
-         <p>This is the 2 project I did blablabalbalbalbalbalba This is the first project I did blablabalbalbalbalbalba</p>
-       </TabPanel>
-       <TabPanel>
-         <p>This is Project number 3 with blanvdsn`fnfs`bnufsi</p>
-       </TabPanel>
-     </Tabs>
+      <TabList>
+        <Tab>CodeClicker</Tab>
+        <Tab>TheLoop</Tab>
+        <Tab>Devify</Tab>
+      </TabList>
+
+      <TabPanel>
+        <p>here goes the bootstrap carousel</p>
+        <p>This is the first project I did blablabalbalbalbalbalba</p>
+      </TabPanel>
+
+      <TabPanel>
+        <p>This is the 2 project I did blablabalbalbalbalbalba This is the first project I did blablabalbalbalbalbalba</p>
+      </TabPanel>
+
+      <TabPanel>
+        <p>This is Project number 3 with blanvdsn`fnfs`bnufsi</p>
+      </TabPanel>
+
+    </Tabs>
 
     </div>
   );

@@ -17,13 +17,17 @@ function Profile() {
           <h1>Gorka Echavarri</h1>
           <h2>Web Developer</h2>
 
-          <div class="btn btn-custom">
-          <span><FontAwesomeIcon icon={faLinkedin} /> Linkedin</span>
-          </div>
-
-          <div class="btn btn-custom">
+          <a href="https://www.linkedin.com/in/gorka-echavarri/" target="_blank" rel="noopener noreferrer">
+          <button className="btn-custom">
+            <span><FontAwesomeIcon icon={faLinkedin} /> Linkedin</span>
+          </button>
+          </a>
+          <br/>
+          <a href="https://github.com/GorkaEchavarri" target="_blank" rel="noopener noreferrer">
+          <button class="btn-custom">
           <p><FontAwesomeIcon icon={faGithub} /> Github</p>
-          </div>
+          </button>
+          </a>
 
         </div>
 
