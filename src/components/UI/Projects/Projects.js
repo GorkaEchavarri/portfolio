@@ -9,9 +9,9 @@ function Projects() {
 
 <Tabs className="Tabs">
        <TabList>
-         <Tab>Project 1</Tab>
-         <Tab>Project 2</Tab>
-         <Tab>Project 3</Tab>
+         <Tab>CodeClicker</Tab>
+         <Tab>TheLoop</Tab>
+         <Tab>Devify</Tab>
        </TabList>
 <TabPanel>
          <p>This is the first project I did blablabalbalbalbalbalba</p>
