@@ -18,4 +18,4 @@ function App() {
 
 export default App;
 
-// Dependencies, FontAwesome, React Tables? Mirar para readme que son.
+// Dependencies, FontAwesome, React Tables, Bootstraps... Mirar para readme que son.
