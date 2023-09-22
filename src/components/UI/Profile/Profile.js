@@ -9,7 +9,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 function Profile() {
 
   return (
-    <div className="Profile-box">
+    <div className="Profile-box col-5">
 
       <div class="wrapper">
 

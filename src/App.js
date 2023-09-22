@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 import Profile from './components/UI/Profile/Profile';
 import Projects from './components/UI/Projects/Projects';
