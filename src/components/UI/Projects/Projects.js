@@ -6,7 +6,7 @@ import HomeCarousel from "./HomeCarousel";
 function Projects() {
 
   return (
-    <div className="Projects-box">
+    <div className="Projects-box col-7">
 
 <Tabs className="Tabs">
       <TabList>
@@ -16,9 +16,7 @@ function Projects() {
       </TabList>
 
       <TabPanel>
-
       <HomeCarousel/>
-
         <p>This is the first project I did blablabalbalbalbalbalba</p>
       </TabPanel>
 
