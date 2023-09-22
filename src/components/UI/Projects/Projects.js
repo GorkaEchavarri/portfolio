@@ -1,5 +1,6 @@
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import './Projects.css';
+import HomeCarousel from "./HomeCarousel";
 
 
 function Projects() {
@@ -15,7 +16,9 @@ function Projects() {
       </TabList>
 
       <TabPanel>
-        <p>here goes the bootstrap carousel</p>
+
+      <HomeCarousel/>
+
         <p>This is the first project I did blablabalbalbalbalbalba</p>
       </TabPanel>
 
