@@ -1,13 +1,8 @@
 import React, {useState} from "react";
 import Carousel from 'react-bootstrap/Carousel';
 
-const data = [
-  {image: require('../../../images/Carousel/CodeClicker/image1.png')},
-  {image:require('../../../images/Carousel/CodeClicker/image2.png')},
-  {image:require('../../../images/Carousel/CodeClicker/image3.png')}
-]
 
-function HomeCarousel() {
+function HomeCarousel(props) {
   const [index, setIndex] = useState(0);
 
   function handleSelect(selectedIndex, e) {
@@ -16,7 +11,7 @@ function HomeCarousel() {
 
   return (
     <Carousel activeIndex={index} onSelect={handleSelect} interval={5000} pause={false}>
-       {data.map((slide, i) => {
+       {props.data.map((slide, i) => {
         return (
           <Carousel.Item>
           <img className="d-block w-100" src={slide.image} alt="slider"/>
