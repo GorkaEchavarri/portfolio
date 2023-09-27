@@ -7,9 +7,6 @@
   height: auto;
   min-height: 400px;
   margin: 3rem auto 1.5rem;
-  /* padding: 2rem 1rem; */
-  /* color: #E8F0F2; */
-  /* border-radius: 2rem; */
 }
 
 .react-tabs {
@@ -21,7 +18,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid #00ADB5;
+  /* border: 1px solid #00ADB5; */
   /* border-radius: 2rem; */
   padding-left: 0px;
 }
@@ -36,7 +33,8 @@
 }
 
 .react-tabs__tab--selected {
-  background: #00ADB5;
+  /* background: #00ADB5!important; */
+    border: 3px solid #00ADB5!important;
 }
 
 .react-tabs__tab--disabled {
@@ -44,18 +42,41 @@
   cursor: default;
 }
 
-.react-tabs__tab:hover {
-  background: rgba(50, 224, 196, 0.15);
-}
+/* .react-tabs__tab:hover { */
+  /* background: rgba(255, 255, 255)!important; */
+/* } */
 
 .react-tabs__tab:first-child {
+  background: #393E46;
   /* border-bottom-left-radius: 2rem; */
-  /* border-top-left-radius: 2rem; */
+  border-top-left-radius: 2rem;
+}
+
+.react-tabs__tab:first-child:hover {
+  background: rgba(228, 204, 148, 0.5);
+  /* border-bottom-left-radius: 2rem; */
+  border-top-left-radius: 2rem;
+}
+
+
+.react-tabs__tab:nth-child(2) {
+  background: #393E46;
+}
+
+.react-tabs__tab:nth-child(2):hover {
+  background: rgba(234, 51, 39, 0.5);
 }
 
 .react-tabs__tab:last-child {
-  /* border-bottom-right-radius: 2rem;
-  border-top-right-radius: 2rem; */
+  background: #393E46;
+  /* border-bottom-right-radius: 2rem; */
+  border-top-right-radius: 2rem;
+}
+
+.react-tabs__tab:last-child:hover {
+  background: rgba(135, 192, 176, 0.5);
+  /* border-bottom-right-radius: 2rem; */
+  border-top-right-radius: 2rem;
 }
 
 .react-tabs__tab-panel {
@@ -64,6 +85,12 @@
 
 .react-tabs__tab-panel--selected {
   display: block;
-  font-size: 2rem;
+  font-size: 1rem;
   text-align: center;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+    opacity: 0.5!important;
 }

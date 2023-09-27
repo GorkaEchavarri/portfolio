@@ -5,7 +5,8 @@ import HomeCarousel from "./HomeCarousel";
 const dataCodeClicker = [
   {image:require('../../../images/Carousel/CodeClicker/image1.png')},
   {image:require('../../../images/Carousel/CodeClicker/image2.png')},
-  {image:require('../../../images/Carousel/CodeClicker/image3.png')}
+  {image:require('../../../images/Carousel/CodeClicker/image3.png')},
+  {image:require('../../../images/Carousel/CodeClicker/image4.png')}
 ]
 
 const dataTheLoop = [
@@ -26,32 +27,48 @@ const dataDevify = [
 
 function Projects() {
 
+  function displayFirstTab() {
+    console.log('First Tab clicked!');
+  }
+  function displaySecondTab() {
+    console.log('Second tab clicked');
+  }
+  function displayThirdTab() {
+    console.log('Third tab clicked');
+  }
+
   return (
     <div className="Projects-box col-7">
 
-<Tabs className="Tabs">
+  <Tabs className="Tabs">
       <TabList>
-        <Tab>CodeClicker</Tab>
-        <Tab>TheLoop</Tab>
-        <Tab>Devify</Tab>
+        <Tab onClick={displayFirstTab}>CodeClicker</Tab>
+        <Tab onClick={displaySecondTab}>TheLoop</Tab>
+        <Tab onClick={displayThirdTab}>Devify</Tab>
       </TabList>
 
       <TabPanel>
       <HomeCarousel data={dataCodeClicker}/>
-        <p>This is the first project I did blablabalbalbalbalbalba</p>
+        <p>Incremental game where the user initially clicks on a big computer on the screen, earning a single line of code per click.</p>
+        <p>They can then use their earned code to purchase "developers" and other "buildings" that automatically produce lines of code per second.</p>
       </TabPanel>
 
       <TabPanel>
       <HomeCarousel data={dataTheLoop}/>
-        <p>This is the 2 project I did blablabalbalbalbalbalba This is the first project I did blablabalbalbalbalbalba</p>
+        <p>
+        A place for anyone impacted by Cancer, whether you have been diagnosed or are supporting a loved one.</p>
+        <p>Support Platform for cancer patients and family members who wants to share feelings, experiences and generally a safe space for people to connect.
+        </p>
       </TabPanel>
 
       <TabPanel>
       <HomeCarousel data={dataDevify}/>
-        <p>This is Project number 3 with blanvdsn`fnfs`bnufsi</p>
+        <p>Hire your own Web Developer with a simple click!</p>
+        <p>The first Team Project done as a mockup for Airbnb where instead of renting places you rent Web Developers to code for you.
+            Designed implemented and shipped to production in Heroku created entirely in Ruby on Rails.</p>
       </TabPanel>
 
-    </Tabs>
+  </Tabs>
 
     </div>
   );
