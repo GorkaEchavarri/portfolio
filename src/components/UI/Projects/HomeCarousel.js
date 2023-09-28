@@ -13,7 +13,7 @@ function HomeCarousel(props) {
     <Carousel activeIndex={index} onSelect={handleSelect} interval={5000} pause={false}>
        {props.data.map((slide, i) => {
         return (
-          <Carousel.Item>
+          <Carousel.Item key={i}>
           <img className="d-block w-100" src={slide.image} alt="slider"/>
           </Carousel.Item>
         )
