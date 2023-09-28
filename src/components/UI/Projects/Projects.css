@@ -14,7 +14,7 @@
 }
 
 .react-tabs__tab-list {
-  margin: 0 auto 2rem;
+  margin: 0 auto 0.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -37,27 +37,15 @@
     border: 3px solid #00ADB5!important;
 }
 
-.react-tabs__tab--disabled {
-  color: GrayText;
-  cursor: default;
-}
-
-/* .react-tabs__tab:hover { */
-  /* background: rgba(255, 255, 255)!important; */
-/* } */
-
 .react-tabs__tab:first-child {
   background: #393E46;
-  /* border-bottom-left-radius: 2rem; */
   border-top-left-radius: 2rem;
 }
 
 .react-tabs__tab:first-child:hover {
   background: rgba(228, 204, 148, 0.5);
-  /* border-bottom-left-radius: 2rem; */
   border-top-left-radius: 2rem;
 }
-
 
 .react-tabs__tab:nth-child(2) {
   background: #393E46;
@@ -69,13 +57,11 @@
 
 .react-tabs__tab:last-child {
   background: #393E46;
-  /* border-bottom-right-radius: 2rem; */
   border-top-right-radius: 2rem;
 }
 
 .react-tabs__tab:last-child:hover {
   background: rgba(135, 192, 176, 0.5);
-  /* border-bottom-right-radius: 2rem; */
   border-top-right-radius: 2rem;
 }
 

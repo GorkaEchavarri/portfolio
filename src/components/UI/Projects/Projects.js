@@ -25,16 +25,17 @@ const dataDevify = [
   {image:require('../../../images/Carousel/Devify/image5.png')}
 ]
 
-function Projects() {
+function Projects(props) {
 
-  function displayFirstTab() {
-    console.log('First Tab clicked!');
+
+  function CodeClickerHandler() {
+    props.onSaveContainer('Container1')
   }
-  function displaySecondTab() {
-    console.log('Second tab clicked');
+  function TheLoopHandler() {
+    props.onSaveContainer('Container2')
   }
-  function displayThirdTab() {
-    console.log('Third tab clicked');
+  function DevifyHandler() {
+    props.onSaveContainer('Container3')
   }
 
   return (
@@ -42,9 +43,9 @@ function Projects() {
 
   <Tabs className="Tabs">
       <TabList>
-        <Tab onClick={displayFirstTab}>CodeClicker</Tab>
-        <Tab onClick={displaySecondTab}>TheLoop</Tab>
-        <Tab onClick={displayThirdTab}>Devify</Tab>
+        <Tab onClick={CodeClickerHandler}>CodeClicker</Tab>
+        <Tab onClick={TheLoopHandler}>TheLoop</Tab>
+        <Tab onClick={DevifyHandler}>Devify</Tab>
       </TabList>
 
       <TabPanel>
