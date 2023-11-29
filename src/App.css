@@ -1,8 +1,11 @@
 .App {
-  text-align: center;
   background-color: #222831;
   color: #EEEEEE;
-  min-height: 100vh;
+}
+
+.Box {
+  text-align: center;
+  /* min-height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
