@@ -1,6 +1,6 @@
 import React from 'react';
 import './Profile.css';
-import ProfilePic from '../../../images/Gorka-profile.jpg';
+import ProfilePic from '../../../images/Gorka-profile-sized.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';

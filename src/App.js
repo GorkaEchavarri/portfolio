@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
-import './App.css';
 import Profile from './components/UI/Profile/Profile';
 import Projects from './components/UI/Projects/Projects';
+import Expertise from './components/UI/Expertise/Expertise.js';
+import 'bootstrap/dist/css/bootstrap.css';
+import './App.css';
 
 function App() {
 
@@ -15,13 +16,13 @@ function App() {
 
   return (
     <div className="App">
-    <div className={containerStatus}>
-
-     <Profile />
-
-     <Projects onSaveContainer={addContainerHandler}/>
-
-    </div>
+      <div className="Box">
+      <div className={containerStatus}>
+      <Profile />
+      <Projects onSaveContainer={addContainerHandler}/>
+      </div>
+      </div>
+      <Expertise />
     </div>
   );
 }
