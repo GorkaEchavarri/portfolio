@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import './All_tools.css';
 import rails from '../../../images/Icons/rails.png';
 import javascript from '../../../images/Icons/JavaScript.png';
@@ -27,52 +28,67 @@ const icons = [
   salesforce,
 ];
 
-function AllTools() {
+function AllTools({setFocusedApp}) {
+
+  const [focused, setFocused] = useState(0)
+
+
 
   function HoverHandler(index) {
-    // console.log(index)
+
     switch (index) {
       case 0:
-        console.log("rails")
+        // console.log("rails")
+        setFocused(0)
       break
       case 1:
-        console.log("javascript")
+        // console.log("javascript")
+        setFocused(1)
       break
       case 2:
-        console.log("react")
+        // console.log("react")
+        setFocused(2)
       break
       case 3:
-        console.log("redux")
+        // console.log("redux")
+        setFocused(3)
       break
       case 4:
-        console.log("restapi")
+        // console.log("restapi")
+        setFocused(4)
       break
       case 5:
-        console.log("postgresql")
+        // console.log("postgresql")
+        setFocused(5)
       break
       case 6:
-        console.log("html")
+        // console.log("html")
+        setFocused(6)
       break
       case 7:
-        console.log("bootstraps")
+        // console.log("bootstraps")
+        setFocused(7)
       break
       case 8:
-        console.log("github")
+        // console.log("github")
+        setFocused(8)
       break
       case 9:
-        console.log("figma")
+        // console.log("figma")
+        setFocused(9)
       break
       case 10:
-        console.log("trello")
+        // console.log("trello")
+        setFocused(10)
       break
       case 11:
-        console.log("salesforce")
+        // console.log("salesforce")
+        setFocused(11)
       break
       default:
         console.log("Wrong expression")
     }
-
-    // Now instead of console.logging we have to change status and move it to the file "focused"
+    setFocusedApp(focused)
   }
 
   return (
