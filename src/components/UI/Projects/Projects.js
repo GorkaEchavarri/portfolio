@@ -1,6 +1,5 @@
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import './Projects.css';
-import HomeCarousel from "./HomeCarousel";
 
 const dataCodeClicker = [
   {image:require('../../../images/Carousel/CodeClicker/image1.png')},
@@ -30,6 +29,7 @@ function Projects(props) {
 
   function CodeClickerHandler() {
     props.onSaveContainer('Container1')
+    // applies Container1 to the Profile in the App.js
   }
   function TheLoopHandler() {
     props.onSaveContainer('Container2')
@@ -38,38 +38,17 @@ function Projects(props) {
     props.onSaveContainer('Container3')
   }
 
+  // onClick={CodeClickerHandler}
+  // onClick={TheLoopHandler}
+  // onClick={DevifyHandler}
+
   return (
     <div className="Projects-box col-7">
 
-  <Tabs className="Tabs">
-      <TabList>
-        <Tab onClick={CodeClickerHandler}>CodeClicker</Tab>
-        <Tab onClick={TheLoopHandler}>TheLoop</Tab>
-        <Tab onClick={DevifyHandler}>Devify</Tab>
-      </TabList>
-
-      <TabPanel>
-      <HomeCarousel data={dataCodeClicker}/>
-        <p>Incremental game where the user initially clicks on a big computer on the screen, earning a single line of code per click.</p>
-        <p>They can then use their earned code to purchase "developers" and other "buildings" that automatically produce lines of code per second.</p>
-      </TabPanel>
-
-      <TabPanel>
-      <HomeCarousel data={dataTheLoop}/>
-        <p>
-        A place for anyone impacted by Cancer, whether you have been diagnosed or are supporting a loved one.</p>
-        <p>Support Platform for cancer patients and family members who wants to share feelings, experiences and generally a safe space for people to connect.
-        </p>
-      </TabPanel>
-
-      <TabPanel>
-      <HomeCarousel data={dataDevify}/>
-        <p>Hire your own Web Developer with a simple click!</p>
-        <p>The first Team Project done as a mockup for Airbnb where instead of renting places you rent Web Developers to code for you.
-            Designed implemented and shipped to production in Heroku created entirely in Ruby on Rails.</p>
-      </TabPanel>
-
-  </Tabs>
+    <h2>Projects</h2>
+    <p>All projects will be shown in cards with images and description, later on
+      I will also add bubble tags of tools I have used. (For when I do Phyton and more diverse stuff)
+    </p>
 
     </div>
   );

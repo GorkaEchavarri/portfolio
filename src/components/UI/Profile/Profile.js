@@ -9,7 +9,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 function Profile() {
 
   return (
-    <div className="Profile-box col-5">
+    <div className="Profile-box">
 
       <div className="wrapper">
 
@@ -36,12 +36,10 @@ function Profile() {
         <div className="footer">
           <p>I am Gorka, a passionate Web Developer expert on user-friendly and innovative web applications that solve real-world problems.
              Love to design, code, and deploy full-stack web projects from scratch.</p>
-          <p>I am organised, hard-working, and eager to learn new tools and skills.
-            I am looking for a dynamic environment where I can apply my web development and product support expertise, and where I can explore new opportunities and challenges.</p>
+          <p>I am currently volunteeing for a non profit organisation as Front End React Developer while I continue my journey of constant learning. I love new challenges!</p>
         </div>
 
       </div>
-
 
     </div>
   );
