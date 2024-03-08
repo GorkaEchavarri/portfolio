@@ -23,18 +23,21 @@ function Focused(ToZoomHandler) {
   if (ToZoomHandler.ToZoomHandler === 0) {
     title = "Ruby on Rails"
     image = rails
-    text = "Small text explaining where Ruby on Rails and how I used the tool."
+    text = "Ruby was my first learning language and Ruby on Rails my first real experience of creating full responsive web applications."
   } else if (ToZoomHandler.ToZoomHandler === 1) {
     title = "JavaScript"
     image = javascript
+    text = "As the most basic programming language, JS was a great approach of learning a different language and understanding the logic behind any language."
 
   } else if (ToZoomHandler.ToZoomHandler === 2) {
     title = "React"
     image = react
+    text = "The best tool for Web Development it changed a lot how I approach the Front End, extremely helpful tool and basic to current Web Developers"
 
   } else if (ToZoomHandler.ToZoomHandler === 3) {
     title = "Redux"
     image = redux
+    text = "Great to pass information between components, until I joined a project that was in years of development my multiple people I didn´t really understand the complications a project of that size can carry."
 
   } else if (ToZoomHandler.ToZoomHandler === 4) {
     title = "Rest API"

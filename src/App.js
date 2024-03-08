@@ -13,16 +13,15 @@ function App() {
     setContainerStatus(item)
   }
 
-
   return (
     <div className="App">
       <div className="Box">
       <div className={containerStatus}>
       <Profile />
-      <Projects onSaveContainer={addContainerHandler}/>
       </div>
       </div>
       <Expertise />
+      <Projects onSaveContainer={addContainerHandler}/>
     </div>
   );
 }
